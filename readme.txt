@@ -26,7 +26,7 @@ If there is only 2 languages available the plugin will display a button but if t
 * English
 * French
 
-Become a translator and send me your translation! [Contact-me](http://b-website.com/contact "Contact")
+Become a translator and send me your translation! [Contact-me](http://guillaume-diard.fr/contact "Contact")
 
 == Installation ==
 
