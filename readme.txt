@@ -34,18 +34,4 @@ Become a translator and send me your translation! [Contact-me](http://b-website.
 2. Click on the "Translation detector" settings link
 3. Choose your color and text
 
-== Frequently Asked Questions ==
 
-= Is it cross-browser compatible? =
-
-Yes, it is compatible with most recent browsers, except for Opera (but IE10+ works!)
-
-
-== Screenshots ==
-
-1. Plugin identity card
-2. Admin page
-3. Dashboard widget
-4. Shortcode builder
-5. Shortcode button
-6. Another example with a theme (back of the card, a plugin with a custom icon, a plugin without icon)
