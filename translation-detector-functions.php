@@ -4,9 +4,6 @@
  * ************************************************************* */
 
 function tdfp_translation_display($content) {
-    if (!is_singular('post'))
-        return $content;
-
     $options = get_option('tdfp_settings');
 
     // Generate content
@@ -82,6 +79,7 @@ function _tdfp_style_generation($options, $linksNumber) {
         }
         
         .tdfp-translations a{ 
+            border: none;
             color: <?php echo $options['color']; ?>;
 <?php } ?>
 <?php if ($linksNumber == 1) { ?>     
@@ -89,6 +87,9 @@ function _tdfp_style_generation($options, $linksNumber) {
             display: block;
 <?php } ?>
         }
+        .tdfp-translations a img {
+            display: inline;
+        }   
 <?php if (isset($options['hover'])) {
         if ($linksNumber > 1) { ?>
         .tdfp-translations a:hover { 

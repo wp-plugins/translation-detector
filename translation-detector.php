@@ -77,7 +77,6 @@ if (!function_exists('tdfp_meta_links')) {
 
     function tdfp_meta_links($links, $file) {
         if ($file == TDFP_BASE) {
-            $links[0] = '<a href="http://guillaume-diard.fr/" target="_blank"><img src="' . TDFP_BASE . 'img/icon-gd.png" style="margin-bottom: -4px;" alt="guillaume-diard"/></a>&nbsp;&nbsp;' . $links[0];
             $links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVGEPQCLB78GC" target="_blank" title="' . __('Donate', 'tdfp-translate') . '"><strong>' . __('Donate', 'tdfp-translate') . '</strong></a>';
         }
         return $links;

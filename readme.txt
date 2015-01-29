@@ -35,3 +35,19 @@ Become a translator and send me your translation! [Contact-me](http://guillaume-
 3. Choose your color and text
 
 
+== Screenshots ==
+
+1. Plugin render with one translation available
+1. Plugin render with multiple translations available
+2. Settings page
+
+== Changelog ==
+
+= 1.0 =
+* First release.
+
+== Upgrade Notice ==
+
+= 1.0 =
+* First release.
+
