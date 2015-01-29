@@ -38,8 +38,9 @@ Become a translator and send me your translation! [Contact-me](http://guillaume-
 == Screenshots ==
 
 1. Plugin render with one translation available
-1. Plugin render with multiple translations available
-2. Settings page
+2. Plugin render with multiple translations available
+3. Settings page
+4. Polylang settings to translate text
 
 == Changelog ==
 
