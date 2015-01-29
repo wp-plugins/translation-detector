@@ -82,7 +82,7 @@ function tdfp_color_hover_render() {
     $options = get_option('tdfp_settings');
     $val = (isset($options['hover'])) ? $options['hover'] : '';
     ?>
-    <input type="text" name="tdfp_settings[hover]" value="<?php echo $val; ?>'" class="color-field" >
+    <input type="text" name="tdfp_settings[hover]" value="<?php echo $val; ?>" class="color-field" >
     <?php
 }
 
