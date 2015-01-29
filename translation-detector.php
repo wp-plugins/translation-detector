@@ -4,7 +4,7 @@
  * Plugin Name: Translation detector for Polylang
  * Plugin URI: http://.../translation-detector
  * Description: This plugin allow you to display links to your translated content. The style and the positions of the links is configurable.
- * Version: 0.1
+ * Version: 1.0
  * Author: Guillaume DIARD
  * Author URI: http://guillaume-diard.fr
  * Domain Path: /langs
