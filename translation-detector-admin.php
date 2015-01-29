@@ -60,6 +60,11 @@ function tdfp_text_display_render() {
     ?>
     <input type="text" name="tdfp_settings[text]" value="<?php echo $val; ?>" >
     <?php
+    if ($val != '') {
+    ?>
+    <span class="description">You can translate this text in Polylang settings <a href="<?php echo admin_url( 'options-general.php?page=mlang&tab=strings' );?>">here</a></span>
+    <?php
+    }
 }
 
 function tdfp_color_text_render() {
