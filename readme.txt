@@ -9,17 +9,19 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
  
-Translation detector display a simple button to navigate to a post translation created with polylang.
+Translation detector display a simple button to navigate to a content translation created with polylang.
 
 == Description ==
 
-This plugin allow you to display a simple link to navigate between a single post translations.
+This plugin allow you to display a simple link to navigate between a content translation.
 
 = How does it work? =
 
 Translation detector check for each post if any translation exists, if it's the case a button is display in the post to navigate between each translation.
 
 If there is only 2 languages available the plugin will display a button but if there is more than 2 languages, it will display multiple links.
+
+You also can translate the text you choose in polylang settings tab 'String translation'
 
 = Languages =
 
@@ -32,8 +34,8 @@ Become a translator and send me your translation! [Contact-me](http://guillaume-
 
 1. Upload and activate the plugin (or install it through the WP admin console)
 2. Click on the "Translation detector" settings link
-3. Choose your color and text
-
+3. Choose your color and text to display in Settings > Translation Detector
+4. You also can translate the text to display in polylang Settings > Languages #String translation
 
 == Screenshots ==
 
@@ -51,4 +53,3 @@ Become a translator and send me your translation! [Contact-me](http://guillaume-
 
 = 1.0 =
 * First release.
-
