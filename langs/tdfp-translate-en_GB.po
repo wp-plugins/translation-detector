@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Translation detector for Polylang v0.1\n"
+"Project-Id-Version: Translation detector for Polylang v1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2014-12-02 23:09:33+0000\n"
+"PO-Revision-Date: 2015-02-03 20:47:57+0000\n"
 "Last-Translator: admin <diard.g@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,49 +20,24 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Textdomain-Support: yes"
 
-#: translation-detector-admin.php:31
+#: translation-detector-admin.php:50
 #@ tdfp-translate
 msgid "Text to display"
 msgstr ""
 
-#: translation-detector-admin.php:32
+#: translation-detector-admin.php:51
 #@ tdfp-translate
 msgid "Text color"
 msgstr ""
 
-#: translation-detector-admin.php:33
+#: translation-detector-admin.php:52
 #@ tdfp-translate
 msgid "Background color"
 msgstr ""
 
-#: translation-detector-admin.php:34
+#: translation-detector-admin.php:53
 #@ tdfp-translate
 msgid "Hover color"
-msgstr ""
-
-#: translation-detector-admin.php:35
-#@ tdfp-translate
-msgid "Display in top"
-msgstr ""
-
-#: translation-detector-admin.php:36
-#@ tdfp-translate
-msgid "Display in bottom"
-msgstr ""
-
-#: translation-detector-admin.php:37
-#@ tdfp-translate
-msgid "Display multiple translations"
-msgstr ""
-
-#: translation-detector-admin.php:86
-#@ tdfp-translate
-msgid "Inline"
-msgstr ""
-
-#: translation-detector-admin.php:87
-#@ tdfp-translate
-msgid "Separated"
 msgstr ""
 
 #. translators: plugin header field 'Name'
@@ -77,12 +52,6 @@ msgstr ""
 msgid "http://.../translation-detector"
 msgstr ""
 
-#. translators: plugin header field 'Description'
-#: translation-detector.php:0
-#@ tdfp-translate
-msgid "This plugin allows you to display link in your content"
-msgstr ""
-
 #. translators: plugin header field 'Author'
 #: translation-detector.php:0
 #@ tdfp-translate
@@ -95,24 +64,76 @@ msgstr ""
 msgid "http://guillaume-diard.fr"
 msgstr ""
 
-#. translators: plugin header field 'Version'
-#: translation-detector.php:0
-#@ tdfp-translate
-msgid "0.1"
-msgstr ""
-
 #: translation-detector.php:67
 #@ tdfp-translate
 msgid "Settings"
 msgstr ""
 
-#: translation-detector.php:81
+#: translation-detector.php:80
 #@ tdfp-translate
 msgid "Donate"
 msgstr ""
 
-#: translation-detector-functions.php:38
+#: translation-detector-functions.php:35
 #@ tdfp-translate
 msgid "This page is also available in"
+msgstr ""
+
+#: translation-detector-admin.php:54
+#@ tdfp-translate
+msgid "Display"
+msgstr ""
+
+#: translation-detector-admin.php:55
+#@ tdfp-translate
+msgid "Post types"
+msgstr ""
+
+#: translation-detector-admin.php:67
+#, php-format
+#@ plugin-domain
+msgid "You can translate this text in Polylang settings <a href=\"%s\">here.</a>"
+msgstr ""
+
+#: translation-detector-admin.php:100
+#@ tdfp-translate
+msgid "Don't displays"
+msgstr ""
+
+#: translation-detector-admin.php:101
+#@ tdfp-translate
+msgid "Top of the content"
+msgstr ""
+
+#: translation-detector-admin.php:102
+#@ tdfp-translate
+msgid "Bottom of the content"
+msgstr ""
+
+#: translation-detector-admin.php:103
+#@ tdfp-translate
+msgid "Top and bottom"
+msgstr ""
+
+#: translation-detector-admin.php:118
+#@ tdfp-translate
+msgid "Homepage"
+msgstr ""
+
+#: translation-detector-functions.php:35
+#@ tdfp-translate
+msgid "text"
+msgstr ""
+
+#. translators: plugin header field 'Description'
+#: translation-detector.php:0
+#@ tdfp-translate
+msgid "This plugin allow you to display links to your translated content. The style and the positions of the links is configurable."
+msgstr ""
+
+#. translators: plugin header field 'Version'
+#: translation-detector.php:0
+#@ tdfp-translate
+msgid "1.0"
 msgstr ""
 

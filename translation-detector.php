@@ -2,13 +2,13 @@
 
 /**
  * Plugin Name: Translation detector for Polylang
- * Plugin URI: http://.../translation-detector
+ * Plugin URI: https://wordpress.org/plugins/translation-detector/
  * Description: This plugin allow you to display links to your translated content. The style and the positions of the links is configurable.
- * Version: 1.0
+ * Version: 1.1
  * Author: Guillaume DIARD
  * Author URI: http://guillaume-diard.fr
  * Domain Path: /langs
- * Text Domain: wppic-translate
+ * Text Domain: tdfp-translate
  */
 /* * *************************************************************
  * SECURITY : Exit if accessed directly
