@@ -1,5 +1,5 @@
 === Translation Detector ===
-Contributors: guillaumediard
+Contributors: guillaume.diard
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVGEPQCLB78GC
 Tags: Polylang, translation, detector, post, language, blog, developper, WordPress, awesome, lang
 Requires at least: 3.7
