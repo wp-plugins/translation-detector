@@ -29,11 +29,19 @@ function _tdfp_links_generation($options) {
     global $polylang;
 
     if (isset($polylang)) {
+        // Get post translations
         $currentPostLanguage = $polylang->model->get_post_language(get_the_ID());
         $postTranlations = $polylang->model->get_translations('post', get_the_ID());
         if ($currentPostLanguage && isset($postTranlations[$currentPostLanguage->slug]))
             unset($postTranlations[$currentPostLanguage->slug]);
-
+        
+        // Delete unpublished translation
+        foreach( $postTranlations as $postSlug => $postId) {
+            if (get_post_status($postId) != 'publish') {
+                unset($postTranlations[$postSlug]);
+            }
+        }
+		
         if (count($postTranlations) > 0) {
             $text = (isset($options['text'])) ? pll__($options['text']) : __('This page is also available in', 'tdfp-translate');
             $links = '<span class="tdfp-translations">';

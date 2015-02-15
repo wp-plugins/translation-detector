@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Polylang, translation, detector, post, language, blog, developper, WordPress, awesome, lang
 Requires at least: 3.7
 Tested up to: 4.0
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,20 +32,23 @@ Become a translator and send me your translation! [Contact-me](http://guillaume-
 
 1. Upload and activate the plugin (or install it through the WP admin console)
 2. Click on the "Translation detector" settings link
-3. Choose your color and text
+3. Choose your text, colors and post type to display the banner
 
 
 == Screenshots ==
 
-1. Plugin render with one translation available
+1. Plugin render with only one translation available
 2. Plugin render with multiple translations available
 3. Settings page
 4. Polylang settings to translate text
 
 == Changelog ==
 
+= 1.2 =
+* Delete link to the unpublished content
+
 = 1.1 =
-* Add new feature to select on which post type is displayed the headband
+* Add new feature to select on which post type is displayed the banner
 
 = 1.0 =
 * First release.
