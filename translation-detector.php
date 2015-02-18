@@ -13,75 +13,75 @@
 /* * *************************************************************
  * SECURITY : Exit if accessed directly
  * ************************************************************* */
-if (!function_exists('add_action')) {
-    header('Status: 403 Forbidden');
-    header('HTTP/1.1 403 Forbidden');
+if ( !function_exists( 'add_action' ) ) {
+    header( 'Status: 403 Forbidden' );
+    header( 'HTTP/1.1 403 Forbidden' );
     exit();
 }
 
-if (!defined('ABSPATH')) {
+if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
 
 /* * *************************************************************
  * Define constants
  * ************************************************************* */
-if (!defined('TDFP_PATH')) {
-    define('TDFP_PATH', plugin_dir_path(__FILE__));
+if ( !defined( 'TDFP_PATH' ) ) {
+    define( 'TDFP_PATH', plugin_dir_path( __FILE__ ) );
 }
-if (!defined('TDFP_BASE')) {
-    define('TDFP_BASE', plugin_basename(__FILE__));
+if ( !defined( 'TDFP_BASE' ) ) {
+    define( 'TDFP_BASE', plugin_basename( __FILE__ ) );
 }
-if (!defined('TDFP_URL')) {
-    define('TDFP_URL', plugin_dir_url(__FILE__));
+if ( !defined( 'TDFP_URL' ) ) {
+    define( 'TDFP_URL', plugin_dir_url( __FILE__ ) );
 }
-if (!defined('TDFP_ID')) {
-    define('TDFP_ID', 'translation_detector');
+if ( !defined( 'TDFP_ID' ) ) {
+    define( 'TDFP_ID', 'translation_detector' );
 }
 
 /* * *************************************************************
  * Load plugin files
  * ************************************************************* */
-$tdfpFiles = array('admin', 'functions');
-foreach ($tdfpFiles as $tdfpFile) {
-    require_once( plugin_dir_path(__FILE__) . 'translation-detector-' . $tdfpFile . '.php' );
+$tdfpFiles = array( 'admin', 'functions' );
+foreach ( $tdfpFiles as $tdfpFile ) {
+    require_once( plugin_dir_path( __FILE__ ) . 'translation-detector-' . $tdfpFile . '.php' );
 }
 
 /* * *************************************************************
  * Load plugin textdomain
  * ************************************************************* */
-if (!function_exists('tdfp_load_textdomain')) {
+if ( !function_exists( 'tdfp_load_textdomain' ) ) {
 
     function tdfp_load_textdomain() {
-        $path = dirname(plugin_basename(__FILE__)) . '/langs/';
-        load_plugin_textdomain('tdfp-translate', false, $path);
+        $path = dirname( plugin_basename( __FILE__ ) ) . '/langs/';
+        load_plugin_textdomain( 'tdfp-translate', false, $path );
     }
-    add_action('init', 'tdfp_load_textdomain');
+    add_action( 'init', 'tdfp_load_textdomain' );
 }
 
 /* * *************************************************************
  * Add settings link on extentions page
  * ************************************************************* */
 
-function tdfp_settings_link($links) {
-    $settings_link = '<a href="options-general.php?page=' . TDFP_ID . '">' . __('Settings', 'tdfp-translate') . '</a>';
+function tdfp_settings_link( $links ) {
+    $settings_link = '<a href="options-general.php?page=' . TDFP_ID . '">' . __( 'Settings', 'tdfp-translate' ) . '</a>';
     $links[] = $settings_link;
     return $links;
 }
-add_filter('plugin_action_links_' . TDFP_BASE, 'tdfp_settings_link');
+add_filter( 'plugin_action_links_' . TDFP_BASE, 'tdfp_settings_link' );
 
 /* * *************************************************************
  * Add custom meta link on plugin list page
  * ************************************************************* */
-if (!function_exists('tdfp_meta_links')) {
+if ( !function_exists( 'tdfp_meta_links' ) ) {
 
-    function tdfp_meta_links($links, $file) {
-        if ($file == TDFP_BASE) {
-            $links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVGEPQCLB78GC" target="_blank" title="' . __('Donate', 'tdfp-translate') . '"><strong>' . __('Donate', 'tdfp-translate') . '</strong></a>';
+    function tdfp_meta_links( $links, $file ) {
+        if ( $file == TDFP_BASE ) {
+            $links[] = '<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RVGEPQCLB78GC" target="_blank" title="' . __( 'Donate', 'tdfp-translate' ) . '"><strong>' . __( 'Donate', 'tdfp-translate' ) . '</strong></a>';
         }
         return $links;
     }
-    add_filter('plugin_row_meta', 'tdfp_meta_links', 10, 2);
+    add_filter( 'plugin_row_meta', 'tdfp_meta_links', 10, 2 );
 }
 
 /* * *************************************************************
@@ -89,9 +89,9 @@ if (!function_exists('tdfp_meta_links')) {
  * ************************************************************* */
 
 function tdfp_uninstall() {
-    delete_option('tdfp_settings');
+    delete_option( 'tdfp_settings' );
 }
 //Hooks for install
-if (function_exists('register_uninstall_hook')) {
-    register_uninstall_hook(__FILE__, 'tdfp_uninstall');
+if ( function_exists( 'register_uninstall_hook' ) ) {
+    register_uninstall_hook( __FILE__, 'tdfp_uninstall' );
 }
