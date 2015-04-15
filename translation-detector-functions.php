@@ -62,7 +62,7 @@ function _tdfp_links_generation( $options ) {
             return array( apply_filters( 'translation-detector-links', $links ), $i );
         }
     }
-    return '';
+    return array('', 0);
 }
 add_shortcode( 'translations-links-generation', 'translation-detector-links' );
 
