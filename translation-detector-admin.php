@@ -5,7 +5,6 @@
 
 function tdfp_register_scripts() {
     if ( is_admin() ) {
-        wp_enqueue_style( 'translation-detector-admin', plugins_url( 'css/translation-detector-admin.css', __FILE__ ) );
         wp_enqueue_style( 'wp-color-picker' ); // Add the color picker css file     
         wp_enqueue_script( 'translation-detector', plugins_url( 'js/translation-detector.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
     }

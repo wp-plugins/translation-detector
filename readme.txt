@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: Polylang, translation, detector, post, language, blog, developper, WordPress, awesome, lang
 Requires at least: 3.7
 Tested up to: 4.2
-Stable tag: 1.3.2
+Stable tag: 1.3.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ Become a translator and send me your translation! [Contact-me](http://guillaume-
 4. Polylang settings to translate text
 
 == Changelog ==
+
+= 1.3.3 =
+* Fix bug : useless admin.css call in back-office (again)
 
 = 1.3.2 =
 * Fix bug : useless admin.css call in back-office
