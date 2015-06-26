@@ -52,7 +52,7 @@ function _tdfp_links_generation( $options ) {
                 $lang = $polylang->model->get_language( $slugTranslation );
                 if ( $i > 0 )
                     $links .= ',';
-                $links .= ' <a href="' . get_permalink( $idTranslation ) . '">';
+                $links .= ' <a href="' . get_permalink( $idTranslation ) . '" hreflang="' . $lang->slug . '">';
                 if ( count( $postTranlations ) == 1 )
                     $links .= $text . ' ';
                 $links .= $lang->name . ' <img src="' . $lang->flag_url . '" alt="' . $lang->name . '"></a>';
